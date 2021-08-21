@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>{% block title %}MEMs | Medical Equipment Management System{% endblock %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="/static/img/favicon.png" rel="icon">
+  <link href="/static/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/static/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="/static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="/static/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="/static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <a href="{% url 'app:index' %}" class="logo mr-auto"><img src="/static/img/logo.png" alt="" class="img-fluid"></a>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{% url 'app:index' %}">หน้าแรก</a></li>
+          <li><a href="#">คุณสมบัติ</a></li>
+          <li><a href="#">ราคา</a></li>
+          <li><a href="#">การปรับปรุง</a></li>
+          <li><a href="#">ติดต่อเรา</a></li>
+          <li class="drop-down"><a href="#">อื่นๆ</a>
+            <ul>
+              <li><a href="#">ฟังก์ชั่นงาน</a></li>
+              <li><a href="#">ทีมงาน</a></li>
+              <li><a href="#">เวอร์ชั่นล่าสุด</a></li>
+              <li><a href="#">API สำหรับนักพัฒนา</a></li>
+            </ul>
+          </li>
+          <li class="drop-down"><a href="#"><img src="/static/img/flag/th.png" style="height: 24px" alt=""> Thai</a>
+            <ul>
+              <li><a href="#"><img src="/static/img/flag/th.png" style="height: 24px" alt=""> Thai</a></li>
+              <li><a href="#"><img src="/static/img/flag/us.png" style="height: 24px" alt=""> English</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <a href="#" class="get-started-btn scrollto"><i class="fa fa-phone"></i> 083 082 6392</a>
+    </div>
+  </header>
+  <section id="hero">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+      <div class="row mt-lg-5">
+        <div class="col-lg-5 order-1">
+          <h1 class="my-3">MEMs ระบบจัดการเครื่องมือแพทย์</h1>
+          <p style="font-size:20px">
+            เหมาะสำหรับ คลินิกความงาม <span style="color:#b48e47">คลินิกเฉพาะทาง คลินิกเวชกรรม คลินิกทั่วไป คลินิกพยาบาลผดุงครรภ์ คลินิกกายภาพบำบัด</span> คลินิกแพทย์แผนไทย-จีน คลินิกอายุรกรรม คลินิกแม่และเด็ก คลินิกบําบัดยาเสพติด เหมาะกับทุกคลินิก.
+          </p>
+          <a href="#" class="btn-get-started scrollto">สมัครใช้ฟรี 30 วัน &rarr;</a>
+          <a href="#" class="btn-get-started btn-started-line">ทดลองใช้</a>
+        </div>
+        <div class="col-lg-7 order-lg-12">
+          <img src="/static/img/macbook.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <main id="main">
+    <section id="features">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-title">
+              <h2>ระบบจัดการแบบ <span style="color:#1f8ecf">ออนไลน์</span> ที่ใช้งานง่ายที่สุด</h2>
+              <p>ออกแบบโดยผู้ที่ทำงานด้านเครื่องมือแพทย์โดยตรง จึงตอบโจทย์ปัญหาของผู้ใช้ ระบบใช้งานง่าย ทำงานแบบออนไลน์ผ่าน Cloud Hosting จึงหมดกังวลเรื่องข้อมูลสูญหาย สะดวกสบายในการออกรายงานแบบครบทุกมุมมอง นำไปใช้สำหรับผู้บริหารได้ทันที</p>
+            </div>
+          </div>
+        </div>
+        <div class="row icon-boxes mb-5">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="ri-rocket-line icon-gradient"></i></div>
+              <h4 class="title"><a href="#">ใช้งานง่าย</a></h4>
+              <p class="description">ออกแบบระบบให้ใช้งานง่าย ลดความยุ่งยาก/ซ้ำซ้อน และตรงความต้องการ เพราะออกแบบโดยนักเครื่องมือแพทย์โดยตรง</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="ri-refresh-line icon-gradient"></i></div>
+              <h4 class="title"><a href="#">ทำงานเรียลไทม์/ออนไลน์</a></h4>
+              <p class="description">ระบบทำงานอยู่บนคลาวด์ สามารถเชื่อมต่อเพื่อใช้งานได้ทันที ทุกที่ทุกเวลา หมดปัญหาไวรัสและข้อมูลสูญหาย</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="ri-time-line icon-gradient"></i></div>
+              <h4 class="title"><a href="#">ประหยัดเวลา</a></h4>
+              <p class="description">ตรวจสอบสถานะของอุปกรณ์ได้ทันที ข้อมูลทุกส่วนเชื่อมโยงกัน และค้นหาได้รวดเร็ว สามารถพิมพ์เอกสาร/ส่งอีเมล ได้ในคลิกเดียว</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="ri-shield-check-line icon-gradient"></i></div>
+              <h4 class="title"><a href="#">มีความปลอดภัย</a></h4>
+              <p class="description">นโยบายในการรักษาความปลอดภัยของข้อมูลสูงสุด มีการสำรองข้อมูล และจำกัดเฉพาะพนักงานที่ได้รับอนุญาติเท่านั้น ในการดูแลระบบ</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="500">
+            <div class="icon-box">
+              <div class="icon"> <i class="ri-file-chart-line icon-gradient"></i></div>
+              <h4 class="title"><a href="#">รายงานครบถ้วน</a></h4>
+              <p class="description">รายงานที่ครบทุกมุมมอง สามารถความเคลื่อนไหวสต็อกอะไหล่ สถานะคุรุภัณฑ์ และรายงานสรุปในรูปแบบ BI ด้วยแดชบอร์ด</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="600">
+            <div class="icon-box">
+              <div class="icon"><i class="ri-smartphone-line icon-gradient"></i></div>
+              <h4 class="title"><a href="#">รองรับการใช้งานบน Mobile</a></h4>
+              <p class="description">ทำงานผ่านโมบายได้ทันที ทุกที่ทุกเวลา โดยไม่จำเป็นต้องเข้ามาในสำนักงาน และสามารถเช็คสต็อกผ่านแอพลิเคชั่นได้</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="feature" class="section-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="section-title">
+              <h2>คุณสมบัติ</h2>
+              <p>ฟังก์ชั่นการใช้งานที่ครบครัน รองรับระบบคุรุภัณฑ์ การแจ้งซ่อม การบำรุงรักษา (PM) การสอบเทียบ/วัด (Calibrate)
+                รวมถึงระบบการแจ้งเตือนต่างๆ ให้คุณสามารถจัดการงานได้อย่างเต็มที่ ใช้งานสะดวกเพียงไม่กี่คลิกเท่านั้น</p>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-lg-5 order-1">
+            <h1 class="display-4 text-dark">ระบบคุรุภัณฑ์</h1>
+            <ul class="check-list mt-4 mb-5">
+              <li><i class="fa fa-check"></i> ดึงข้อมูลผ่านบัตรประชาชน</li>
+              <li><i class="fa fa-check"></i> บันทึกการตรวจ OPD ได้หลายรายการ</li>
+              <li><i class="fa fa-check"></i> รองรับนัดหมาย Google Calendar</li>
+              <li><i class="fa fa-check"></i> รองรับการบันทึกรูปก่อนหลังและเอกสารสำคัญ</li>
+              <li><i class="fa fa-check"></i> ทำรายการย้อนหลังได้ทั้งการตรวจและเปิดใบเสร็จ</li>
+              <li><i class="fa fa-check"></i> รองรับการผ่อนชำระและจ่ายได้มากกว่า 1 ช่องทาง</li>
+              <li><i class="fa fa-check"></i> รายงานวิเคราะห์ข้อมูลยอดขาย</li>
+            </ul>
+          </div>
+          <div class="col-lg-7 order-lg-12">
+            <div class="ml-lg-4 mb-5">
+              <div class="card border-0 p-4 shadow-sm" style="height:400px">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-lg-7">
+            <div class="mr-lg-4 mb-5">
+              <div class="card border-0 p-4 shadow-sm" style="height:400px">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h1 class="display-4 text-dark">การแจ้งซ่อม</h1>
+            <ul class="check-list mt-4 mb-5">
+              <li><i class="fa fa-check"></i> ดึงข้อมูลผ่านบัตรประชาชน</li>
+              <li><i class="fa fa-check"></i> บันทึกการตรวจ OPD ได้หลายรายการ</li>
+              <li><i class="fa fa-check"></i> รองรับนัดหมาย Google Calendar</li>
+              <li><i class="fa fa-check"></i> รองรับการบันทึกรูปก่อนหลังและเอกสารสำคัญ</li>
+              <li><i class="fa fa-check"></i> ทำรายการย้อนหลังได้ทั้งการตรวจและเปิดใบเสร็จ</li>
+              <li><i class="fa fa-check"></i> รองรับการผ่อนชำระและจ่ายได้มากกว่า 1 ช่องทาง</li>
+              <li><i class="fa fa-check"></i> รายงานวิเคราะห์ข้อมูลยอดขาย</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-lg-5 order-1">
+            <h1 class="display-4 text-dark">ระบบคลังสินค้า</h1>
+            <ul class="check-list mt-4 mb-5">
+              <li><i class="fa fa-check"></i> ดึงข้อมูลผ่านบัตรประชาชน</li>
+              <li><i class="fa fa-check"></i> บันทึกการตรวจ OPD ได้หลายรายการ</li>
+              <li><i class="fa fa-check"></i> รองรับนัดหมาย Google Calendar</li>
+              <li><i class="fa fa-check"></i> รองรับการบันทึกรูปก่อนหลังและเอกสารสำคัญ</li>
+              <li><i class="fa fa-check"></i> ทำรายการย้อนหลังได้ทั้งการตรวจและเปิดใบเสร็จ</li>
+              <li><i class="fa fa-check"></i> รองรับการผ่อนชำระและจ่ายได้มากกว่า 1 ช่องทาง</li>
+              <li><i class="fa fa-check"></i> รายงานวิเคราะห์ข้อมูลยอดขาย</li>
+            </ul>
+          </div>
+          <div class="col-lg-7 order-lg-12">
+            <div class="ml-lg-4 mb-5">
+              <div class="card border-0 p-4 shadow-sm" style="height:400px">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-lg-7">
+            <div class="mr-lg-4 mb-5">
+              <div class="card border-0 p-4 shadow-sm" style="height:400px">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h1 class="display-4 text-dark">รายงาน</h1>
+            <ul class="check-list mt-4 mb-5">
+              <li><i class="fa fa-check"></i> ดึงข้อมูลผ่านบัตรประชาชน</li>
+              <li><i class="fa fa-check"></i> บันทึกการตรวจ OPD ได้หลายรายการ</li>
+              <li><i class="fa fa-check"></i> รองรับนัดหมาย Google Calendar</li>
+              <li><i class="fa fa-check"></i> รองรับการบันทึกรูปก่อนหลังและเอกสารสำคัญ</li>
+              <li><i class="fa fa-check"></i> ทำรายการย้อนหลังได้ทั้งการตรวจและเปิดใบเสร็จ</li>
+              <li><i class="fa fa-check"></i> รองรับการผ่อนชำระและจ่ายได้มากกว่า 1 ช่องทาง</li>
+              <li><i class="fa fa-check"></i> รายงานวิเคราะห์ข้อมูลยอดขาย</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="counts" class="counts">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <span data-toggle="counter-up">15,113,895</span>
+              <p>มูลค่ารวม</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <span data-toggle="counter-up">85</span>
+              <p>ลูกค้า</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <span data-toggle="counter-up">1,948</span>
+              <p>การปรับปรุง</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <span data-toggle="counter-up">5</span>
+              <p>ทีมงาน</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta about-video">
+      <div class="container" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+            <img src="/static/img/about-video.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+          <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3 class="text-white text-right">"ระบบ MEMs ช่วยให้สามารถมองเห็น ข้อมูลคุรุภัณฑ์ได้ สามารถวางแผนการจัดสรรเครื่องได้ทันที ตามความต้องการของ ward ต่าง ๆ"</h3>
+            <p class="text-right font-italic">
+              คุณธิติชัย - โรงพยาบาลตรัง
+            </p>
+            <p class="mt-5" style="line-height: 1.8em">
+              ช่วยให้ทำงานผ่านมือถือร่วมกับเว็บไซต์ได้อย่างสะดวกทุกที่ อยากออกเอกสารให้ลูกค้า หรือเช็กยอดขายก็ทำได้ทันที
+              ให้คุณมีข้อมูลธุรกิจติดตัวไม่ว่าจะอยู่ที่ไหน
+            </p>
+            <p class="mt-4" style="line-height: 1.8em">
+              ประหยัดเวลาจ่ายเงินเดือนทุกสิ้นเดือน ได้ทั้งพนักงานแบบรายวันและรายเดือน ที่ช่วยคำนวณประกันสังคม ภาษี หัก ณ ที่จ่าย
+              ออกสลิปเงินเดือนออนไลน์ บันทึกค่าใช้จ่ายและเก็บเอกสารออนไลน์ด้วยระบบสแกนบิลและใบเสร็จ
+              และยังใช้งานได้ทั้งในเว็บไซต์และแอปพลิเคชั่นมือถือ
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+        <div class="row mb-5">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="section-title">
+              <h2>แพคเกจราคา</h2>
+              <p>เลือกแพคเกจราคาตามความเหมาะสม สำหรับปริมาณในการใช้งาน กับงบประมาณของหน่วยงานท่าน
+                และสามารถเปลี่ยนแปลง หรืออัพเกรดไปใช้แพกเกจอื่นๆ ได้ตามความต้องการ</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-im" data-aos-delay="100">
+            <div class="box">
+              <h3 style="font-size:30px">Free</h3>
+              <h4><sup>฿</sup>0<span> / ปี</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li class="na">Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">เลือกแพกเกจ</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box featured">
+              <h3 style="font-size:30px">Pro</h3>
+              <h4><sup>฿</sup>9,500<span> / ปี</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li class="na">Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">เลือกแพกเกจ</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+            <div class="box">
+              <h3 style="font-size:30px">Enterprise</h3>
+              <h4><sup>฿</sup>15,000<span> / ปี</span></h4>
+              <ul>
+                <li>Aida dere</li>
+                <li>Nec feugiat nisl</li>
+                <li>Nulla at volutpat dola</li>
+                <li>Pharetra massa</li>
+                <li>Massa ultricies mi</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">เลือกแพกเกจ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <img src="/static/img/depa.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-title">
+              <h2>การปรับปรุง</h2>
+              <p>ระบบของเรามีการพัฒนาอย่างต่อเนื่อง ให้มีประสิทธิภาพดีขึ้นในทุกๆ วัน คุณสามารถส่ง feedback มายังอีเมลของทีมงานได้
+                ซึ่งเมื่อเราพัฒนาและทดสอบเรียบร้อยแล้ว จะ release ออกมา คุณสามารถอัพเดทเวอร์ชั่นใหม่ๆ ได้ฟรีแบบไม่จำกัด ตลอดอายุการใช้งาน</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="fa fa-plus icon-help"></i>
+              <a data-toggle="collapse" class="collapse" href="#faq-list-1" style="font-size: 20px">Version 2.1.2 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <div class="p-4">
+                  <div>2021-01-01: ปรับปรุงหน้าจอ</div>
+                  <div>2021-01-01: เพิ่มฟังก์ชั่นในการค้นหา</div>
+                  <div>2021-01-01: แก้ไข Issue #150 ผู้ใช้ไม่สามารถเข้าระบบได้</div>
+                  <div>2021-01-01: ปรับปรุงระบบล็อกอิน</div>
+                  <div>2021-01-01: การเชื่อมต่อโมบายแบบ Rest API</div>
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="fa fa-plus icon-help"></i>
+              <a data-toggle="collapse" href="#faq-list-2" class="collapsed" style="font-size: 20px">Version 2.0.15 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="fa fa-plus icon-help"></i>
+              <a data-toggle="collapse" href="#faq-list-3" class="collapsed" style="font-size: 20px">Version 2.0.10 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="fa fa-plus icon-help"></i>
+              <a data-toggle="collapse" href="#faq-list-4" class="collapsed" style="font-size: 20px">Version 2.0.8 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+              </div>
+            </li>
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="fa fa-plus icon-help"></i>
+              <a data-toggle="collapse" href="#faq-list-5" class="collapsed" style="font-size: 20px">Version 2.0.5 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>ติดต่อเรา</h2>
+          <p>เราเป็นทีมงานของ บริษัท แอพโค้ด เทคโนโลยี จำกัด สามารถติดต่อได้จากเว็บไซต์อย่างเป็นทางการ ตามช่องทางติดต่อทางด้านล่าง</p>
+        </div>
+        <div>
+          <iframe style="border:0;width:100%;height:270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>บริษัท แอพโค้ด เทคโนโลยี จำกัด</p>
+              </div>
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@mems.co</p>
+              </div>
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>02 157-3558 มือถือ 083-082-6392</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="ชื่อ หรือ หน่วยงาน" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="อีเมล" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="หัวเรื่อง" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" placeholder="แจ้งการใช้โปรแกรม หรือ ข้อเสนอแนะ" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">ส่งข้อความเรียบร้อยแล้ว! ขอบคุณ</div>
+              </div>
+              <div class="text-center"><button type="submit">ส่งข้อมูล</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>MEMs</h3>
+            <p>
+              มาจาก <strong>(M)edical (E)quipment (M)anagement System(s)"</strong>
+              เป็นหนึ่งในผลิตภัณฑ์ของทีมงาน "แอพโค้ด" เรามีความเชี่ยวชาญการพัฒนาซอฟต์แวร์โดยใช้ Odoo Framework
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>เมนู</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ฟังก์ชั่นทั้งหมด</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ทีมงาน</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">เงื่อนไขการใช้งาน</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">ผังเว็บไซต์</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>บริการของเรา</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">เว็บไซต์ Appcode</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">โปรแกรม CarWash</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">โปรแกรม PosValue</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">โปรแกรม EasyClinic</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>สื่อการเรียนรู้</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">บทความ</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">วีดีโอแนะนำ</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">คู่มือการใช้งาน</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-md-flex py-4">
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; 2021 Copyright <strong><span>MEMs</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="http://www.appcode.co.th">Appcode</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="medium"><i class="bx bxl-medium"></i></a>
+        <a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+  <script src="/static/vendor/jquery/jquery.min.js"></script>
+  <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="/static/vendor/php-email-form/validate.js"></script>
+  <script src="/static/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/static/vendor/counterup/counterup.min.js"></script>
+  <script src="/static/vendor/venobox/venobox.min.js"></script>
+  <script src="/static/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="/static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/vendor/aos/aos.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
