@@ -26,10 +26,10 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="{% url 'app:index' %}">หน้าแรก</a></li>
-          <li><a href="#">คุณสมบัติ</a></li>
-          <li><a href="#">ราคา</a></li>
-          <li><a href="#">การปรับปรุง</a></li>
-          <li><a href="#">ติดต่อเรา</a></li>
+          <li><a href="#feature">คุณสมบัติ</a></li>
+          <li><a href="#pricing">ราคา</a></li>
+          <li><a href="#faq">การปรับปรุง</a></li>
+          <li><a href="#contact">ติดต่อเรา</a></li>
           <li class="drop-down"><a href="#">อื่นๆ</a>
             <ul>
               <li><a href="#">ฟังก์ชั่นงาน</a></li>
@@ -53,12 +53,12 @@
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row mt-lg-5">
         <div class="col-lg-5 order-1">
-          <h1 class="my-3">MEMs ระบบจัดการเครื่องมือแพทย์</h1>
+          <h1 class="my-3">ระบบจัดการ<br/>เครื่องมือแพทย์</h1>
           <p style="font-size:20px">
-            เหมาะสำหรับ คลินิกความงาม <span style="color:#b48e47">คลินิกเฉพาะทาง คลินิกเวชกรรม คลินิกทั่วไป คลินิกพยาบาลผดุงครรภ์ คลินิกกายภาพบำบัด</span> คลินิกแพทย์แผนไทย-จีน คลินิกอายุรกรรม คลินิกแม่และเด็ก คลินิกบําบัดยาเสพติด เหมาะกับทุกคลินิก.
+            ระบบบริหารเครื่องมือแพทย์แบบครบวงจร สำหรับ <span style="color:#b48e47">โรงพยาบาล สถานพยาบาล คลีนิค สถานีอนามัย ศูนย์เครื่องมือแพทย์</span> หรือบริษัท ที่เกี่ยวข้องกับงานซ่อมเครื่องมือแพทย์
           </p>
           <a href="#" class="btn-get-started scrollto">สมัครใช้ฟรี 30 วัน &rarr;</a>
-          <a href="#" class="btn-get-started btn-started-line">ดูตัวอย่าง</a>
+          <a href="http://memsofts.com:8069" target="_blank" class="btn-get-started btn-started-line">ดูตัวอย่าง</a>
         </div>
         <div class="col-lg-7 order-lg-12">
           <img src="/static/img/macbook.png" class="img-fluid" alt="">
@@ -125,92 +125,102 @@
     </section>
     <section id="feature" class="section-bg">
       <div class="container">
-        <div class="row">
+        <div class="row" style="margin-bottom: 50px" data-aos="fade-up">
           <div class="col-lg-8 offset-lg-2">
             <div class="section-title">
               <h2>คุณสมบัติ</h2>
               <p>ฟังก์ชั่นการใช้งานที่ครบครัน รองรับระบบคุรุภัณฑ์ การแจ้งซ่อม การบำรุงรักษา (PM) การสอบเทียบ/วัด (Calibrate)
-                รวมถึงระบบการแจ้งเตือนต่างๆ ให้คุณสามารถจัดการงานได้อย่างเต็มที่ ใช้งานสะดวกเพียงไม่กี่คลิกเท่านั้น</p>
+                ระบบการแจ้งเตือนต่างๆ ให้คุณสามารถจัดการงานได้อย่างเต็มที่ ใช้งานสะดวกเพียงไม่กี่คลิกเท่านั้น</p>
             </div>
           </div>
         </div>
-        <div class="row my-5">
+        <div class="row" style="margin-bottom: 80px" data-aos="fade-up">
           <div class="col-lg-5 order-1">
             <h1 class="display-4 text-dark">ระบบคุรุภัณฑ์</h1>
             <ul class="check-list mt-4 mb-5">
-              <li><i class="fa fa-check"></i> ดึงข้อมูลผ่านบัตรประชาชน</li>
-              <li><i class="fa fa-check"></i> บันทึกการตรวจ OPD ได้หลายรายการ</li>
-              <li><i class="fa fa-check"></i> รองรับนัดหมาย Google Calendar</li>
-              <li><i class="fa fa-check"></i> รองรับการบันทึกรูปก่อนหลังและเอกสารสำคัญ</li>
-              <li><i class="fa fa-check"></i> ทำรายการย้อนหลังได้ทั้งการตรวจและเปิดใบเสร็จ</li>
-              <li><i class="fa fa-check"></i> รองรับการผ่อนชำระและจ่ายได้มากกว่า 1 ช่องทาง</li>
-              <li><i class="fa fa-check"></i> รายงานวิเคราะห์ข้อมูลยอดขาย</li>
+              <li><i class="fa fa-check"></i> รองรับการแสดงหลายมุมมอง เช่น รายการ, รูปภาพ และปฏิทิน</li>
+              <li><i class="fa fa-check"></i> แสดงสถานะเป็นแถบสี</li>
+              <li><i class="fa fa-check"></i> มีระบบตรวจสอบประกันสินค้า</li>
+              <li><i class="fa fa-check"></i> แสดงประวัติการซ่อม การสอบเทียบ และการบำรุงรักษา</li>
+              <li><i class="fa fa-check"></i> จัดกลุ่มตามรายการที่สนใจได้</li>
+              <li><i class="fa fa-check"></i> แนบคู่มือ หรือ เอกสารการใช้งานได้</li>
+              <li><i class="fa fa-check"></i> พิมพ์ทะเบียนประวัติเป็น PDF และป้าย Q/R Code</li>
+              <li><i class="fa fa-check"></i> รองรับการนำเข้า (Import) และส่งออก (Export) ข้อมูลเป็นไฟล์ CSV หรือ Excel</li>
             </ul>
           </div>
           <div class="col-lg-7 order-lg-12">
             <div class="ml-lg-4 mb-5">
-              <div class="card border-0 p-4 shadow-sm" style="height:400px">
+              <div class="card border-0 p-3 shadow-sm">
+                <img src="/static/img/feature/feature01.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
         </div>
-        <div class="row my-5">
+        <div class="row" style="margin-bottom: 80px" data-aos="fade-up">
           <div class="col-lg-7">
             <div class="mr-lg-4 mb-5">
-              <div class="card border-0 p-4 shadow-sm" style="height:400px">
+              <div class="card border-0 p-3 shadow-sm">
+                <img src="/static/img/feature/feature02.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
           <div class="col-lg-5">
             <h1 class="display-4 text-dark">การแจ้งซ่อม</h1>
             <ul class="check-list mt-4 mb-5">
-              <li><i class="fa fa-check"></i> ดึงข้อมูลผ่านบัตรประชาชน</li>
-              <li><i class="fa fa-check"></i> บันทึกการตรวจ OPD ได้หลายรายการ</li>
-              <li><i class="fa fa-check"></i> รองรับนัดหมาย Google Calendar</li>
-              <li><i class="fa fa-check"></i> รองรับการบันทึกรูปก่อนหลังและเอกสารสำคัญ</li>
-              <li><i class="fa fa-check"></i> ทำรายการย้อนหลังได้ทั้งการตรวจและเปิดใบเสร็จ</li>
-              <li><i class="fa fa-check"></i> รองรับการผ่อนชำระและจ่ายได้มากกว่า 1 ช่องทาง</li>
-              <li><i class="fa fa-check"></i> รายงานวิเคราะห์ข้อมูลยอดขาย</li>
+              <li><i class="fa fa-check"></i> สร้างใบแจ้งซ่อม</li>
+              <li><i class="fa fa-check"></i> ลงทะเบียนประวัติอาการเสีย และการแก้ไข</li>
+              <li><i class="fa fa-check"></i> อนุมัติการซ่อมตามลำดับงาน (Work flow)</li>
+              <li><i class="fa fa-check"></i> ติดตามงานซ่อม ได้หลายสถานะ</li>
+              <li><i class="fa fa-check"></i> พิมพ์ใบแจ้งซ่อมได้</li>
+              <li><i class="fa fa-check"></i> รองรับการส่งอีเมล ไปยังผู้รับผิดชอบ</li>
+              <li><i class="fa fa-check"></i> สร้างใบเบิกอะไหล่อัตโนมัติ</li>
+              <li><i class="fa fa-check"></i> ติดตามสถานะของงานซ่อม เชื่อมโยงด้วย Google Calendar และ LINE</li>
             </ul>
           </div>
         </div>
-        <div class="row my-5">
+        <div class="row" style="margin-bottom: 80px" data-aos="fade-up">
           <div class="col-lg-5 order-1">
             <h1 class="display-4 text-dark">ระบบคลังสินค้า</h1>
             <ul class="check-list mt-4 mb-5">
-              <li><i class="fa fa-check"></i> ดึงข้อมูลผ่านบัตรประชาชน</li>
-              <li><i class="fa fa-check"></i> บันทึกการตรวจ OPD ได้หลายรายการ</li>
-              <li><i class="fa fa-check"></i> รองรับนัดหมาย Google Calendar</li>
-              <li><i class="fa fa-check"></i> รองรับการบันทึกรูปก่อนหลังและเอกสารสำคัญ</li>
-              <li><i class="fa fa-check"></i> ทำรายการย้อนหลังได้ทั้งการตรวจและเปิดใบเสร็จ</li>
-              <li><i class="fa fa-check"></i> รองรับการผ่อนชำระและจ่ายได้มากกว่า 1 ช่องทาง</li>
-              <li><i class="fa fa-check"></i> รายงานวิเคราะห์ข้อมูลยอดขาย</li>
+              <li><i class="fa fa-check"></i> ฟังก์ชั่นใบขอราคา (RFQ)</li>
+              <li><i class="fa fa-check"></i> ฟังก์ชั่นใบสั่งซื้อสินค้า (Purchase Order)</li>
+              <li><i class="fa fa-check"></i> ฟังก์ชั่นการรับเข้าสินค้า (Receive)</li>
+              <li><i class="fa fa-check"></i> ฟังก์ชั่นใบเบิกวัตถุดิบ (Issue)</li>
+              <li><i class="fa fa-check"></i> สามารถดูความเคลื่อนไหวของสินค้า (Stock Move)</li>
+              <li><i class="fa fa-check"></i> ปรับยอดจำนวนในสต็อก</li>
+              <li><i class="fa fa-check"></i> ระบบแจ้งเตือนสินค้าใกล้หมด</li>
+              <li><i class="fa fa-check"></i> พิมพ์รายละเอียดสินค้า PDF และป้าย Q/R Code</li>
+              <li><i class="fa fa-check"></i> ฟังก์ชั่นจัดการสินค้าด้วย Mobile</li>
             </ul>
           </div>
           <div class="col-lg-7 order-lg-12">
             <div class="ml-lg-4 mb-5">
-              <div class="card border-0 p-4 shadow-sm" style="height:400px">
+              <div class="card border-0 p-3 shadow-sm">
+                <img src="/static/img/feature/feature03.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
         </div>
-        <div class="row my-5">
+        <div class="row" style="margin-bottom: 50px" data-aos="fade-up">
           <div class="col-lg-7">
             <div class="mr-lg-4 mb-5">
-              <div class="card border-0 p-4 shadow-sm" style="height:400px">
+              <div class="card border-0 p-3 shadow-sm">
+                <img src="/static/img/feature/feature04.png" class="img-fluid" alt="">
               </div>
             </div>
           </div>
           <div class="col-lg-5">
             <h1 class="display-4 text-dark">รายงาน</h1>
             <ul class="check-list mt-4 mb-5">
-              <li><i class="fa fa-check"></i> ดึงข้อมูลผ่านบัตรประชาชน</li>
-              <li><i class="fa fa-check"></i> บันทึกการตรวจ OPD ได้หลายรายการ</li>
-              <li><i class="fa fa-check"></i> รองรับนัดหมาย Google Calendar</li>
-              <li><i class="fa fa-check"></i> รองรับการบันทึกรูปก่อนหลังและเอกสารสำคัญ</li>
-              <li><i class="fa fa-check"></i> ทำรายการย้อนหลังได้ทั้งการตรวจและเปิดใบเสร็จ</li>
-              <li><i class="fa fa-check"></i> รองรับการผ่อนชำระและจ่ายได้มากกว่า 1 ช่องทาง</li>
-              <li><i class="fa fa-check"></i> รายงานวิเคราะห์ข้อมูลยอดขาย</li>
+              <li><i class="fa fa-check"></i> รายงานสถานะคุรุภัณฑ์</li>
+              <li><i class="fa fa-check"></i> รายงานเครื่องหมดประกัน</li>
+              <li><i class="fa fa-check"></i> รายงานสอบเทียบ/วัด</li>
+              <li><i class="fa fa-check"></i> รายงานสถานะงานซ่อม</li>
+              <li><i class="fa fa-check"></i> รายงานเครื่อง Down Time</li>
+              <li><i class="fa fa-check"></i> รายงานคลังสินค้า</li>
+              <li><i class="fa fa-check"></i> รายงานการยืม/คืน</li>
+              <li><i class="fa fa-check"></i> รายงานประสิทธิภาพช่าง</li>
+              <li><i class="fa fa-check"></i> สามารถพิมพ์ออกมาเป็น PDF และ Excel</li>
             </ul>
           </div>
         </div>
@@ -288,11 +298,12 @@
               <h3 style="font-size:30px">Free</h3>
               <h4><sup>฿</sup>0<span> / ปี</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li>ใช้งานโมดูลพื้นฐานได้</li>
+                <li>แสดงโลโก้ที่รายงาน</li>
+                <li>Shared Server</li>
+                <li class="na">ขอปรับแต่ง/แก้ไข เพิ่มรายงาน</li>
+                <li class="na">พิมพ์ Q/R Code</li>
+                <li class="na">รองรับ Mobile Inventory</li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">เลือกแพกเกจ</a>
@@ -302,13 +313,14 @@
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
             <div class="box featured">
               <h3 style="font-size:30px">Pro</h3>
-              <h4><sup>฿</sup>9,500<span> / ปี</span></h4>
+              <h4><sup>฿</sup>7,900<span> / ปี</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
+                <li>ใช้งานได้ทุกโมดูล</li>
+                <li>ใช้ได้ทุกรายงาน</li>
+                <li>Dedicated Server</li>
+                <li>ปรับแต่งแก้ไข ขอเพิ่มรายงานได้</li>
+                <li>รองรับการพิมพ์ Q/R Code</li>
+                <li class="na">รองรับ Mobile Inventory</li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">เลือกแพกเกจ</a>
@@ -318,13 +330,14 @@
           <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
             <div class="box">
               <h3 style="font-size:30px">Enterprise</h3>
-              <h4><sup>฿</sup>15,000<span> / ปี</span></h4>
+              <h4><sup>฿</sup>9,500<span> / ปี</span></h4>
               <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
+                <li>ใช้งานได้ทุกโมดูล</li>
+                <li>ใช้ได้ทุกรายงาน</li>
+                <li>Dedicated Server</li>
+                <li>ปรับแต่งแก้ไข ขอเพิ่มรายงานได้</li>
+                <li>รองรับการพิมพ์ Q/R Code</li>
+                <li>รองรับ Mobile Inventory</li>
               </ul>
               <div class="btn-wrap">
                 <a href="#" class="btn-buy">เลือกแพกเกจ</a>
