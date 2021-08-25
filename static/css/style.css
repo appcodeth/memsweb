@@ -14,10 +14,7 @@ body {
 }
 
 img {
-  filter: blur(0);
-  -webkit-filter: blur(0);
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
+  image-rendering: -webkit-optimize-contrast;
 }
 
 a {
