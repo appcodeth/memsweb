@@ -11,6 +11,8 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.8em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
