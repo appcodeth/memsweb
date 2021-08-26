@@ -17,6 +17,8 @@ body {
 
 img {
   image-rendering: -webkit-optimize-contrast !important;
+  -webkit-transform-style: preserve-3d !important;
+  transform-style: preserve-3d;
 }
 
 a {
