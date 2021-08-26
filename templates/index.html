@@ -32,8 +32,8 @@
           <li><a href="#contact">ติดต่อเรา</a></li>
           <li class="drop-down"><a href="#"><img src="/static/img/flag/th.png" style="height: 24px" alt=""> Thai</a>
             <ul>
-              <li><a href="#"><img src="/static/img/flag/th.png" style="height: 24px" alt=""> Thai</a></li>
-              <li><a href="#"><img src="/static/img/flag/us.png" style="height: 24px" alt=""> English</a></li>
+              <li><a href="{% url 'app:index' %}"><img src="/static/img/flag/th.png" style="height: 24px" alt=""> Thai</a></li>
+              <li><a href="{% url 'app:index' %}"><img src="/static/img/flag/us.png" style="height: 24px" alt=""> English</a></li>
             </ul>
           </li>
         </ul>
@@ -80,7 +80,7 @@
           <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-5" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="ri-refresh-line icon-gradient"></i></div>
-              <h4 class="title"><a href="#">ทำงานเรียลไทม์/ออนไลน์</a></h4>
+              <h4 class="title"><a href="#">เรียลไทม์/ออนไลน์</a></h4>
               <p class="description">ระบบทำงานอยู่บนคลาวด์ สามารถเชื่อมต่อเพื่อใช้งานได้ทันที ทุกที่ทุกเวลา หมดปัญหาไวรัสและข้อมูลสูญหาย</p>
             </div>
           </div>
@@ -127,48 +127,48 @@
           </div>
         </div>
         <div class="row align-items-center" style="margin-bottom: 80px" data-aos="fade-up">
-          <div class="col-lg-5 order-1">
-            <h1 class="display-4 text-dark">ระบบคุรุภัณฑ์</h1>
-            <ul class="check-list mt-2 mb-5">
-              <li><i class="fa fa-check"></i> รองรับการแสดงหลายมุมมอง เช่น รายการ, รูปภาพ และปฏิทิน</li>
-              <li><i class="fa fa-check"></i> แสดงสถานะเป็นแถบสี</li>
-              <li><i class="fa fa-check"></i> มีระบบตรวจสอบประกันสินค้า</li>
-              <li><i class="fa fa-check"></i> แสดงประวัติการซ่อม การสอบเทียบ และการบำรุงรักษา</li>
-              <li><i class="fa fa-check"></i> จัดกลุ่มตามรายการที่สนใจได้</li>
-              <li><i class="fa fa-check"></i> แนบคู่มือ หรือ เอกสารการใช้งานได้</li>
-              <li><i class="fa fa-check"></i> พิมพ์ทะเบียนประวัติเป็น PDF และป้าย Q/R Code</li>
-              <li><i class="fa fa-check"></i> รองรับการนำเข้า (Import) และส่งออก (Export) ข้อมูลเป็นไฟล์ CSV หรือ Excel</li>
-            </ul>
-          </div>
-          <div class="col-lg-7 order-lg-12">
-            <div class="ml-lg-4">
-              <img src="/static/img/feature/feature01.png" class="img-fluid" alt="">
+          <div class="col-lg-7 order-1">
+            <div class="mr-lg-5">
+              <h1 class="display-4 text-dark">คุรุภัณฑ์</h1>
+              <ul class="check-list mt-2 mb-5">
+                <li><i class="fa fa-check"></i> รองรับการแสดงหลายมุมมอง เช่น รายการ, รูปภาพ และปฏิทิน</li>
+                <li><i class="fa fa-check"></i> แสดงสถานะเป็นแถบสี</li>
+                <li><i class="fa fa-check"></i> มีระบบตรวจสอบประกันสินค้า</li>
+                <li><i class="fa fa-check"></i> แสดงประวัติการซ่อม การสอบเทียบ และการบำรุงรักษา</li>
+                <li><i class="fa fa-check"></i> จัดกลุ่มตามรายการที่สนใจได้</li>
+                <li><i class="fa fa-check"></i> แนบคู่มือ หรือ เอกสารการใช้งานได้</li>
+                <li><i class="fa fa-check"></i> พิมพ์ทะเบียนประวัติเป็น PDF และป้าย Q/R Code</li>
+                <li><i class="fa fa-check"></i> รองรับการนำเข้า (Import) และส่งออก (Export) ข้อมูลเป็นไฟล์ CSV หรือ Excel</li>
+              </ul>
             </div>
+          </div>
+          <div class="col-lg-5 order-lg-12">
+            <img src="/static/img/feature/feature01.png" class="img-fluid rounded-lg mb-4" alt="">
           </div>
         </div>
         <div class="row align-items-center" style="margin-bottom: 80px" data-aos="fade-up">
-          <div class="col-lg-7">
-            <div class="mr-lg-4">
-              <img src="/static/img/feature/feature02.png" class="img-fluid" alt="">
-            </div>
-          </div>
           <div class="col-lg-5">
-            <h1 class="display-4 text-dark">การแจ้งซ่อม</h1>
-            <ul class="check-list mt-2 mb-5">
-              <li><i class="fa fa-check"></i> สร้างใบแจ้งซ่อม</li>
-              <li><i class="fa fa-check"></i> ลงทะเบียนประวัติอาการเสีย และการแก้ไข</li>
-              <li><i class="fa fa-check"></i> อนุมัติการซ่อมตามลำดับงาน (Work flow)</li>
-              <li><i class="fa fa-check"></i> ติดตามงานซ่อม ได้หลายสถานะ</li>
-              <li><i class="fa fa-check"></i> พิมพ์ใบแจ้งซ่อมได้</li>
-              <li><i class="fa fa-check"></i> รองรับการส่งอีเมล ไปยังผู้รับผิดชอบ</li>
-              <li><i class="fa fa-check"></i> สร้างใบเบิกอะไหล่อัตโนมัติ</li>
-              <li><i class="fa fa-check"></i> ติดตามสถานะของงานซ่อม เชื่อมโยงด้วย Google Calendar และ LINE</li>
-            </ul>
+            <img src="/static/img/feature/feature02.png" class="img-fluid rounded-lg mb-4" alt="">
+          </div>
+          <div class="col-lg-7">
+            <div class="ml-lg-5">
+              <h1 class="display-4 text-dark">การแจ้งซ่อม</h1>
+              <ul class="check-list mt-2 mb-5">
+                <li><i class="fa fa-check"></i> สร้างใบแจ้งซ่อม</li>
+                <li><i class="fa fa-check"></i> ลงทะเบียนประวัติอาการเสีย และการแก้ไข</li>
+                <li><i class="fa fa-check"></i> อนุมัติการซ่อมตามลำดับงาน (Work flow)</li>
+                <li><i class="fa fa-check"></i> ติดตามงานซ่อม ได้หลายสถานะ</li>
+                <li><i class="fa fa-check"></i> พิมพ์ใบแจ้งซ่อมได้</li>
+                <li><i class="fa fa-check"></i> รองรับการส่งอีเมล ไปยังผู้รับผิดชอบ</li>
+                <li><i class="fa fa-check"></i> สร้างใบเบิกอะไหล่อัตโนมัติ</li>
+                <li><i class="fa fa-check"></i> ติดตามสถานะของงานซ่อม เชื่อมโยงด้วย Google Calendar และ LINE</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row align-items-center" style="margin-bottom: 80px" data-aos="fade-up">
           <div class="col-lg-5 order-1">
-            <h1 class="display-4 text-dark">ระบบคลังสินค้า</h1>
+            <h1 class="display-4 text-dark">คลังสินค้า</h1>
             <ul class="check-list mt-2 mb-5">
               <li><i class="fa fa-check"></i> ฟังก์ชั่นใบขอราคา (RFQ)</li>
               <li><i class="fa fa-check"></i> ฟังก์ชั่นใบสั่งซื้อสินค้า (Purchase Order)</li>
@@ -182,30 +182,28 @@
             </ul>
           </div>
           <div class="col-lg-7 order-lg-12">
-            <div class="ml-lg-4">
-              <img src="/static/img/feature/feature03.png" class="img-fluid" alt="">
-            </div>
+            <img src="/static/img/feature/feature03.png" class="img-fluid rounded-lg mb-4" alt="">
           </div>
         </div>
         <div class="row align-items-center" style="margin-bottom: 40px" data-aos="fade-up">
-          <div class="col-lg-7">
-            <div class="mr-lg-4">
-              <img src="/static/img/feature/feature04.png" class="img-fluid" alt="">
-            </div>
-          </div>
           <div class="col-lg-5">
-            <h1 class="display-4 text-dark">รายงาน</h1>
-            <ul class="check-list mt-2 mb-5">
-              <li><i class="fa fa-check"></i> รายงานสถานะคุรุภัณฑ์</li>
-              <li><i class="fa fa-check"></i> รายงานเครื่องหมดประกัน</li>
-              <li><i class="fa fa-check"></i> รายงานสอบเทียบ/วัด</li>
-              <li><i class="fa fa-check"></i> รายงานสถานะงานซ่อม</li>
-              <li><i class="fa fa-check"></i> รายงานเครื่อง Down Time</li>
-              <li><i class="fa fa-check"></i> รายงานคลังสินค้า</li>
-              <li><i class="fa fa-check"></i> รายงานการยืม/คืน</li>
-              <li><i class="fa fa-check"></i> รายงานประสิทธิภาพช่าง</li>
-              <li><i class="fa fa-check"></i> สามารถพิมพ์ออกมาเป็น PDF และ Excel</li>
-            </ul>
+            <img src="/static/img/feature/feature04.png" class="img-fluid rounded-lg mb-4" alt="">
+          </div>
+          <div class="col-lg-7">
+            <div class="ml-lg-5">
+              <h1 class="display-4 text-dark">รายงาน</h1>
+              <ul class="check-list mt-2 mb-5">
+                <li><i class="fa fa-check"></i> รายงานสถานะคุรุภัณฑ์</li>
+                <li><i class="fa fa-check"></i> รายงานเครื่องหมดประกัน</li>
+                <li><i class="fa fa-check"></i> รายงานสอบเทียบ/วัด</li>
+                <li><i class="fa fa-check"></i> รายงานสถานะงานซ่อม</li>
+                <li><i class="fa fa-check"></i> รายงานเครื่อง Down Time</li>
+                <li><i class="fa fa-check"></i> รายงานคลังสินค้า</li>
+                <li><i class="fa fa-check"></i> รายงานการยืม/คืน</li>
+                <li><i class="fa fa-check"></i> รายงานประสิทธิภาพช่าง</li>
+                <li><i class="fa fa-check"></i> สามารถพิมพ์ออกมาเป็น PDF และ Excel</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -243,10 +241,6 @@
     <section id="cta" class="cta about-video">
       <div class="container" data-aos="zoom-in">
         <div class="row">
-          <!-- <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
-            <img src="/static/img/about-video.jpg" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-          </div> -->
           <div class="col-lg-6" data-aos-delay="100">
           </div>
           <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
@@ -429,7 +423,7 @@
           <p>เราเป็นทีมงานของ บริษัท แอพโค้ด เทคโนโลยี จำกัด สามารถติดต่อได้จากเว็บไซต์อย่างเป็นทางการ ตามช่องทางติดต่อทางด้านล่าง</p>
         </div>
         <div>
-          <iframe style="border:0;width:100%;height:270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
+          <iframe style="border:0;width:100%;height:270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.7045300466325!2d100.52913668176876!3d13.905152187339661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d788e44883f63%3A0xb4ba6f0a624c8edc!2z4Lia4Lij4Li04Lip4Lix4LiXIOC5geC4reC4nuC5guC4hOC5ieC4lCDguYDguJfguITguYLguJnguYLguKXguKLguLUg4LiI4Liz4LiB4Lix4LiU!5e0!3m2!1sth!2sth!4v1593425773575!5m2!1sth!2sth" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="row mt-5">
           <div class="col-lg-4">
@@ -490,7 +484,7 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>MEMs</h3>
             <p>
-              มาจาก <strong>(M)edical (E)quipment (M)anagement System(s)"</strong>
+              ย่อมาจาก <strong>(M)edical (E)quipment (M)anagement System(s)"</strong>
               เป็นหนึ่งในผลิตภัณฑ์ของทีมงาน "แอพโค้ด" เรามีความเชี่ยวชาญการพัฒนาซอฟต์แวร์โดยใช้ Odoo Framework
             </p>
           </div>
