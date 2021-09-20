@@ -2,13 +2,14 @@
 # General
 --------------------------------------------------------------*/
 h1,h2,h3,h4,h5 {
-  font-family: "Sarabun", sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 body {
   color: #789;
-  font-family: "Sarabun", sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 18px;
+  font-weight: 300;
   line-height: 1.8em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
